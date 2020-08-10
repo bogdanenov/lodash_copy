@@ -1,4 +1,4 @@
-const _ = require('./lodash/lodash')
+import * as lodash from './lodash/lodash'
 
-const array = _.chunk([1,2,3,4],3);
+const array : Array<any> = lodash.chunk([1,2,3,4],3);
 console.log(array);
