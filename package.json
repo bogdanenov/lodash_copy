@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack --mode development --watch"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,17 @@
   },
   "homepage": "https://github.com/bogdanenov/lodash_copy#readme",
   "dependencies": {
-    "@types/node": "^14.0.27"
+    "@types/node": "^14.0.27",
+    "clean-webpack-plugin": "^3.0.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.5.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.9",
+    "jest": "^26.4.0",
+    "ts-jest": "^26.2.0",
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7"
   }
 }

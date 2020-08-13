@@ -11,3 +11,6 @@ exports.chunk = function (arr, size) {
     }
     return resultArray;
 };
+exports.compact = function (arr) {
+    return arr.filter(function (value) { return !!value != false; });
+};
